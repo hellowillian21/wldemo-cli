@@ -1,0 +1,31 @@
+{
+  "name": "wldemo-cli",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "wldemo": "./bin/index.js"
+  },
+  "scripts": {
+    "compile": "npx babel src -d dist",
+    "watch": "npm run compile -- --watch"
+  },
+  "keywords": [
+    "wldemo-cli",
+    "cli",
+    "demo"
+  ],
+  "author": "hellowillian21",
+  "license": "ISC",
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "commander": "^2.19.0",
+    "download-git-repo": "^1.1.0",
+    "inquirer": "^6.2.1",
+    "ora": "^3.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0"
+  }
+}
